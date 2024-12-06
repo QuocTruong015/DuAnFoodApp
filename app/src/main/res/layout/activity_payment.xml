@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Thanh toán"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBack"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBack" />
+
+    <ImageView
+        android:id="@+id/img_visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_visa"
+        app:layout_constraintStart_toStartOf="@+id/btnAddVisa"
+        app:layout_constraintTop_toBottomOf="@+id/edtDiaChi" />
+
+    <TextView
+        android:id="@+id/txtVisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="VISA"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_visa"
+        app:layout_constraintStart_toStartOf="@+id/img_visa"
+        app:layout_constraintTop_toBottomOf="@+id/img_visa" />
+
+    <ImageView
+        android:id="@+id/img_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/img_cash"
+        app:layout_constraintBottom_toBottomOf="@+id/img_visa"
+        app:layout_constraintStart_toEndOf="@+id/img_visa"
+        app:layout_constraintTop_toTopOf="@+id/img_visa" />
+
+    <TextView
+        android:id="@+id/txtCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="CASH"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_cash"
+        app:layout_constraintStart_toStartOf="@+id/img_cash"
+        app:layout_constraintTop_toBottomOf="@+id/img_cash" />
+
+    <ImageView
+        android:id="@+id/btnAddVisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_add_visa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVisa" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="ĐỊA CHỈ GIAO HÀNG"
+        app:layout_constraintStart_toStartOf="@+id/btnAddVisa"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/txtEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SỬA"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddVisa"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:hint="48 Cao Thắng, Đà Nẵng"
+        android:paddingLeft="20dp"
+        android:background="@drawable/input_bg"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddVisa"
+        app:layout_constraintStart_toStartOf="@+id/btnAddVisa"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/btnThanhToan1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_btn"
+        android:text="THANH TOÁN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddVisa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
